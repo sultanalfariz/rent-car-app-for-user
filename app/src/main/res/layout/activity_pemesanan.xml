@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/ThemeColor">
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemesanan"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:text = "DATA PEMESANAN"/>
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2dp"
+            android:text = "Silahkan memasukan informasi dasar berikut dengan benar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_nama"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:text="Nama Kendaraan"/>
+
+    <EditText
+        android:background="@drawable/bg_input_data"
+        android:layout_below="@id/text_nama"
+        android:id="@+id/form_nama"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Nama Kendaraan"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/text_ktp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:text="Tanggal Pemesanan"/>
+
+    <EditText
+        android:background="@drawable/bg_input_data"
+        android:layout_below="@id/text_ktp"
+        android:id="@+id/form_ktp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Tanggal Pemesanan"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/text_alamat"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:text="Tanggal Pakai"/>
+
+    <EditText
+        android:background="@drawable/bg_input_data"
+        android:layout_below="@id/text_ktp"
+        android:id="@+id/form_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Tanggal Pakai"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/text_telpon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:text="Tanggal Selesai"/>
+
+    <EditText
+        android:background="@drawable/bg_input_data"
+        android:layout_below="@id/text_telpon"
+        android:id="@+id/form_telpon"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Tanggal Selesai"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_harga"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="Harga"/>
+
+        <EditText
+            android:background="@drawable/bg_input_data"
+            android:layout_below="@id/text_telpon"
+            android:id="@+id/form_harga"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Rp. -"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/btn_pesan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="pesan"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_btn_login"/>
+
+</LinearLayout>

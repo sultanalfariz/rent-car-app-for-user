@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/img_logo"
+        android:layout_below="@id/toolbar_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_car"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/logo_dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/img_logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_nama"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="Nama"/>
+
+        <EditText
+            android:background="@drawable/bg_input_data"
+            android:layout_below="@id/text_nama"
+            android:id="@+id/form_nama"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Nama lengkap Anda"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text_ktp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="No. KTP"/>
+
+        <EditText
+            android:background="@drawable/bg_input_data"
+            android:layout_below="@id/text_ktp"
+            android:id="@+id/form_ktp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Nomor Identitas"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text_alamat"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="Alamat"/>
+
+        <EditText
+            android:background="@drawable/bg_input_data"
+            android:layout_below="@id/text_ktp"
+            android:id="@+id/form_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Alamat"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text_telpon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="No. Telepon"/>
+
+        <EditText
+            android:background="@drawable/bg_input_data"
+            android:layout_below="@id/text_telpon"
+            android:id="@+id/form_telpon"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="No. Telepon"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="Email"/>
+
+        <EditText
+            android:background="@drawable/bg_input_data"
+            android:layout_below="@id/text_email"
+            android:id="@+id/form_email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Masukkan Email"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoComplete"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text_password"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:text="Password"/>
+
+        <EditText
+            android:background="@drawable/bg_input_data"
+            android:layout_below="@id/text_password"
+            android:id="@+id/form_password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Masukkan Password"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoComplete"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btn_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/text_password"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="daftar"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_btn_login"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
